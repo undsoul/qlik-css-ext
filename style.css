@@ -1,0 +1,85 @@
+.css-injector-container {
+    font-family: "QlikView Sans", sans-serif;
+    padding: 12px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.css-injector-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.css-injector-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.css-injector-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.css-injector-content {
+    flex: 1;
+    overflow: auto;
+}
+
+.css-injector-preview {
+    padding: 8px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css-injector-editor {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.css-injector-textarea {
+    flex: 1;
+    min-height: 120px;
+    font-family: monospace;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 8px;
+}
+
+.css-injector-help {
+    font-size: 12px;
+    color: #666;
+    background-color: #f9f9f9;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.css-injector-help code {
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-family: monospace;
+}
+
+.css-visibility-note {
+    font-style: italic;
+    color: #ff6d00;
+    background-color: #fff3e0;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 5px;
+    border-left: 3px solid #ff6d00;
+}

@@ -1,0 +1,27 @@
+<div class="css-injector-container" qv-extension>
+    <div class="css-injector-header">
+        <h3>CSS Injector</h3>
+        <button class="lui-button" ng-if="!isEditing" ng-click="toggleEdit()">Edit CSS</button>
+        <div class="css-injector-actions" ng-if="isEditing">
+            <button class="lui-button lui-button--primary" ng-click="applyChanges()">Apply</button>
+            <button class="lui-button" ng-click="toggleEdit()">Cancel</button>
+        </div>
+    </div>
+    <div class="css-injector-content">
+        <div ng-if="!isEditing" class="css-injector-preview">
+            <p class="css-status">{{customCSS ? 'CSS is active' : 'No CSS applied'}}</p>
+            <p ng-if="!customCSS">Click 'Edit CSS' to add your custom styles.</p>
+            <p ng-if="$parent.layout.hideExtension" class="css-visibility-note">
+                <i>This extension is set to be hidden. You can see it now because you're in edit mode.</i>
+            </p>
+        </div>
+        <div ng-if="isEditing" class="css-injector-editor">
+            <textarea class="css-injector-textarea" ng-model="customCSS" placeholder="/* Add your CSS code here */"></textarea>
+            <div class="css-injector-help">
+                <p>Enter your custom CSS code above. This will be applied to the entire application.</p>
+                <p>Example: <code>.qv-object { border: 1px solid red; }</code></p>
+                <p>Note: You can hide this extension in view mode by setting "Hide Extension Object" to "Yes" in the properties panel.</p>
+            </div>
+        </div>
+    </div>
+</div>

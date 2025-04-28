@@ -1,0 +1,14 @@
+{
+    "name": "CSS Injector",
+    "description": "Extension for injecting custom CSS into Qlik applications",
+    "type": "visualization",
+    "version": "1.1.0",
+    "author": "MuchachoAI",
+    "homepage": "",
+    "keywords": "qlik-sense, visualization, css, customization",
+    "license": "MIT",
+    "repository": "",
+    "dependencies": {
+        "qlik-sense": ">=3.0.x"
+    }
+}
