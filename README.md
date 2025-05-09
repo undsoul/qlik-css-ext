@@ -11,10 +11,23 @@ A custom Qlik extension that allows you to inject CSS code into your Qlik applic
 
 ## Installation
 
-1. Download the extension files
-2. Place them in your Qlik Sense Extensions directory:
-   - For Qlik Sense Desktop: `C:\Users\[Username]\Documents\Qlik\Sense\Extensions\CSSInjector`
-   - For Qlik Sense Enterprise: Import the extension through the QMC (Qlik Management Console)
+### Qlik Sense Desktop / On-Premises
+
+1. Download the latest release ZIP file from the [releases page](https://github.com/yourusername/qlik-globe/releases)
+2. Extract the ZIP file
+3. Copy the extracted folder to your Qlik Sense extensions directory:
+   - Qlik Sense Desktop: `C:\Users\[USERNAME]\Documents\Qlik\Sense\Extensions\`
+   - Qlik Sense Server: Import through the QMC (Qlik Management Console)
+
+### Qlik Sense Cloud
+
+1. Download the latest release ZIP file from the [releases page](https://github.com/yourusername/qlik-globe/releases)
+2. Log in to your Qlik Sense Cloud tenant
+3. Navigate to the hub and open the app where you want to use the extension
+4. Click on "Add new" in the left panel
+5. Select "Extension" and then "Upload extension"
+6. Choose the downloaded ZIP file and upload
+7. The extension will now be available in your app
 
 ## Usage
 
